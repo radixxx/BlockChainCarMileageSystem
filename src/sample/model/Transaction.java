@@ -2,6 +2,7 @@ package sample.model;
 
 import sample.Main;
 
+import java.security.PrivateKey;
 import java.security.PublicKey;
 import java.util.ArrayList;
 
@@ -65,6 +66,12 @@ public class Transaction {
 
         return true;
     }
+
+    public void generateSignature(PrivateKey privateKey) {
+        String data = StringUtil.getStringFromKey(sender) + StringUtil.getStringFromKey(reciepient) + Float.toString(value)	;
+        signature = StringUtil.applyECDSASig(privateKey,data);
+    }
+
 
 
 }
