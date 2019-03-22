@@ -72,6 +72,10 @@ public class Transaction {
         signature = StringUtil.applyECDSASig(privateKey,data);
     }
 
+    public boolean verifySignature() {
+        String data = StringUtil.getStringFromKey(sender) + StringUtil.getStringFromKey(reciepient) + Float.toString(value)	;
+        return StringUtil.verifyECDSASig(sender, data, signature);
+    }
 
 
 }
