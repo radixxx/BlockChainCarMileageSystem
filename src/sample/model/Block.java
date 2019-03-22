@@ -22,5 +22,15 @@ public class Block {
     public Block() {
     }
 
+    //Calculate new hash based on blocks contents
+    public String calculateHash() {
+        String calculatedhash = StringUtil.applySha256(
+                previousHash +
+                        Long.toString(timeStamp) +
+                        Integer.toString(nonce) +
+                        merkleRoot
+        );
+        return calculatedhash;
+    }
 
 }
