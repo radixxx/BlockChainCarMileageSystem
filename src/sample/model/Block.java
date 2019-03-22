@@ -61,4 +61,9 @@ public class Block {
         return true;
     }
 
+    @Override
+    public String toString() {
+        return hash;
+    }
+
 }
