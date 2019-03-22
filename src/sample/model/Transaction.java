@@ -77,5 +77,14 @@ public class Transaction {
         return StringUtil.verifyECDSASig(sender, data, signature);
     }
 
+    public float getInputsValue() {
+        float total = 0;
+        for(TransactionInput i : inputs) {
+            if(i.UTXO == null) continue; //if Transaction can't be found skip it, This behavior may not be optimal.
+            total += i.UTXO.value;
+        }
+        return total;
+    }
+
 
 }
