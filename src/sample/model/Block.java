@@ -44,4 +44,21 @@ public class Block {
         System.out.println("Block Mined!!! : " + hash);
     }
 
+
+    //Add transactions to this block
+    public boolean addTransaction(Transaction transaction) {
+        //process transaction and check if valid, unless block is genesis block then ignore.
+        if (transaction == null) return false;
+        if ((!"0".equals(previousHash))) {
+            if ((transaction.processTransaction() != true)) {
+                System.out.println("Transaction failed to process. Discarded.");
+                return false;
+            }
+        }
+
+        transactions.add(transaction);
+        System.out.println("Transaction Successfully added to Block");
+        return true;
+    }
+
 }
