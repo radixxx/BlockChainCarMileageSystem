@@ -1,6 +1,8 @@
 package sample.model;
 
 import java.security.MessageDigest;
+import java.security.PrivateKey;
+import java.security.Signature;
 
 public class StringUtil {
     //Applies Sha256 to a string and returns the result.
@@ -23,6 +25,23 @@ public class StringUtil {
         catch(Exception e) {
             throw new RuntimeException(e);
         }
+    }
+
+    //Applies ECDSA Signature and returns the result ( as bytes ).
+    public static byte[] applyECDSASig(PrivateKey privateKey, String input) {
+        Signature dsa;
+        byte[] output = new byte[0];
+        try {
+            dsa = Signature.getInstance("ECDSA", "BC");
+            dsa.initSign(privateKey);
+            byte[] strByte = input.getBytes();
+            dsa.update(strByte);
+            byte[] realSig = dsa.sign();
+            output = realSig;
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+        return output;
     }
 
 }
