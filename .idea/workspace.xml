@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="add new class TransactionOutput" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="add new function generateKeyPair">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/model/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/model/Repository.java" afterDir="false" />
+    </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -96,8 +99,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/model/Transaction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="886">
-              <caret line="70" column="21" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="21" />
+            <state relative-caret-position="354">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -106,13 +109,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/sample/model/TransactionOutput.java">
+        <entry file="file://$PROJECT_DIR$/src/sample/model/Repository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+            <state relative-caret-position="703">
+              <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
               <folding>
-                <element signature="e#761#762#0" expanded="true" />
-                <element signature="e#809#810#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#392#393#0" expanded="true" />
+                <element signature="e#425#426#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -146,6 +150,8 @@
         <option value="$PROJECT_DIR$/src/sample/model/StringUtil.java" />
         <option value="$PROJECT_DIR$/src/sample/model/Transaction.java" />
         <option value="$PROJECT_DIR$/src/sample/model/TransactionOutput.java" />
+        <option value="$PROJECT_DIR$/src/sample/model/TransactionInput.java" />
+        <option value="$PROJECT_DIR$/src/sample/model/Repository.java" />
       </list>
     </option>
   </component>
@@ -208,7 +214,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553376040304" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553376588159" />
     <property name="dynamic.classpath" value="false" />
     <property name="recentsLimit" value="5" />
   </component>
@@ -316,7 +322,7 @@
       <workItem from="1553268871624" duration="59000" />
       <workItem from="1553268940704" duration="200000" />
       <workItem from="1553269167100" duration="2796000" />
-      <workItem from="1553375670123" duration="241000" />
+      <workItem from="1553375670123" duration="722000" />
     </task>
     <task id="LOCAL-00001" summary="create new project structure">
       <created>1553269531390</created>
@@ -437,11 +443,32 @@
       <option name="project" value="LOCAL" />
       <updated>1553375897811</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="add new class TransactionInput">
+      <created>1553375963240</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1553375963240</updated>
+    </task>
+    <task id="LOCAL-00019" summary="add new class Repository for keeping info of actual balance of block-storage">
+      <created>1553376174087</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1553376174087</updated>
+    </task>
+    <task id="LOCAL-00020" summary="add new function generateKeyPair">
+      <created>1553376214556</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1553376214556</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4699000" />
+    <option name="totallyTimeSpent" value="5180000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="27" y="46" width="1612" height="876" extended-state="0" />
@@ -516,7 +543,10 @@
     <MESSAGE value="add new function getInputsValue" />
     <MESSAGE value="add new function calulateHash" />
     <MESSAGE value="add new class TransactionOutput" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new class TransactionOutput" />
+    <MESSAGE value="add new class TransactionInput" />
+    <MESSAGE value="add new class Repository for keeping info of actual balance of block-storage" />
+    <MESSAGE value="add new function generateKeyPair" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new function generateKeyPair" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -568,12 +598,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/model/Transaction.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/model/TransactionInput.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="886">
-          <caret line="70" column="21" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="21" />
+        <state relative-caret-position="153">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#284#285#0" expanded="true" />
+            <element signature="e#346#347#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -585,6 +616,28 @@
           <folding>
             <element signature="e#761#762#0" expanded="true" />
             <element signature="e#809#810#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/model/Transaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/model/Repository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="703">
+          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#392#393#0" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
           </folding>
         </state>
       </provider>
