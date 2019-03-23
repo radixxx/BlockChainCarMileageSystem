@@ -84,4 +84,28 @@ public class Repository {
         return newTransaction;
     }
 
+    public PrivateKey getPrivateKey() {
+        return privateKey;
+    }
+
+    public void setPrivateKey(PrivateKey privateKey) {
+        this.privateKey = privateKey;
+    }
+
+    public PublicKey getPublicKey() {
+        return publicKey;
+    }
+
+    public void setPublicKey(PublicKey publicKey) {
+        this.publicKey = publicKey;
+    }
+
+    public HashMap<String, TransactionOutput> getUTXOs() {
+        return UTXOs;
+    }
+
+    public void setUTXOs(HashMap<String, TransactionOutput> UTXOs) {
+        this.UTXOs = UTXOs;
+    }
+
 }
