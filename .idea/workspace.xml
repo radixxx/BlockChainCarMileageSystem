@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="add new function generateKeyPair">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="add new function getBalance">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/model/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/model/Repository.java" afterDir="false" />
     </list>
@@ -112,7 +112,7 @@
         <entry file="file://$PROJECT_DIR$/src/sample/model/Repository.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="703">
-              <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+              <caret line="84" column="5" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#392#393#0" expanded="true" />
@@ -214,7 +214,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553376588159" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553376894987" />
     <property name="dynamic.classpath" value="false" />
     <property name="recentsLimit" value="5" />
   </component>
@@ -322,7 +322,7 @@
       <workItem from="1553268871624" duration="59000" />
       <workItem from="1553268940704" duration="200000" />
       <workItem from="1553269167100" duration="2796000" />
-      <workItem from="1553375670123" duration="722000" />
+      <workItem from="1553375670123" duration="917000" />
     </task>
     <task id="LOCAL-00001" summary="create new project structure">
       <created>1553269531390</created>
@@ -464,11 +464,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553376214556</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="add new function getBalance">
+      <created>1553376611357</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1553376611357</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5180000" />
+    <option name="totallyTimeSpent" value="5375000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="27" y="46" width="1612" height="876" extended-state="0" />
@@ -546,7 +553,8 @@
     <MESSAGE value="add new class TransactionInput" />
     <MESSAGE value="add new class Repository for keeping info of actual balance of block-storage" />
     <MESSAGE value="add new function generateKeyPair" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new function generateKeyPair" />
+    <MESSAGE value="add new function getBalance" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new function getBalance" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -633,7 +641,7 @@
     <entry file="file://$PROJECT_DIR$/src/sample/model/Repository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="703">
-          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+          <caret line="84" column="5" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#392#393#0" expanded="true" />

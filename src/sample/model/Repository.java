@@ -4,6 +4,7 @@ import sample.Main;
 
 import java.security.*;
 import java.security.spec.ECGenParameterSpec;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -57,5 +58,30 @@ public class Repository {
         return total;
     }
 
+    // !!!!!!!!!!!!
+    public Transaction sendMileage(PublicKey _recipient, float resourceSendingValue) {
+        if (getBalance() < resourceSendingValue) {
+            System.out.println("#Not Enough funds to send transaction. Transaction Discarded.");
+            return null;
+        }
+        ArrayList<TransactionInput> inputs = new ArrayList<TransactionInput>();
+
+        float total = 0;
+        for (Map.Entry<String, TransactionOutput> item : UTXOs.entrySet()) {
+            TransactionOutput UTXO = item.getValue();
+            total += UTXO.value;
+            inputs.add(new TransactionInput(UTXO.id));
+            if (total > resourceSendingValue) break;
+        }
+
+        Transaction newTransaction = new Transaction(publicKey, _recipient, resourceSendingValue, inputs);
+        newTransaction.generateSignature(privateKey);
+
+        for (TransactionInput input : inputs) {
+            UTXOs.remove(input.transactionOutputId);
+        }
+
+        return newTransaction;
+    }
 
 }
