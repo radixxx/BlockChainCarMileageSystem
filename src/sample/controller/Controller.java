@@ -22,7 +22,7 @@ import sample.Main;
 import sample.model.Block;
 
 import static sample.Main.*;
-import static sample.model.Gloabal.genesisTransaction;
+import static sample.model.Gloabal.*;
 import static sample.model.Global.*;
 import static sample.model.Validation.addBlock;
 import static sample.model.Validation.isChainValid;
