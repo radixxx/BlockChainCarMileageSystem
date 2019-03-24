@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+import static sample.model.Gloabal.allTripValue;
+
 public class Repository {
     public PrivateKey privateKey;
     public PublicKey publicKey;
