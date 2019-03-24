@@ -15,7 +15,7 @@ public class Gloabal {
     public static Block block7;
     public static Block block8;
 
-   // public static Simulation simulation;
+   // public static SimulationController simulation;
     public static float allTripValue;
 
     public static float resourceSendingValue;
