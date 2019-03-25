@@ -88,4 +88,9 @@ public class Validation {
         return true;
     }
 
+    public static void addBlock(Block newBlock) {
+        newBlock.mineBlock(difficulty);
+        blockchain.add(newBlock);
+    }
+
 }
