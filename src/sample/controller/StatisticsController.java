@@ -21,9 +21,8 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import static sample.model.Gloabal.*;
-import static sample.model.Global.*;
 import static sample.model.Validation.addBlock;
-//import static sample.model.Validation.addBlock;
+import static sample.model.Validation.addBlock;
 
 public class StatisticsController implements Initializable {
 

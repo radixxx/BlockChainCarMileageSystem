@@ -3,11 +3,6 @@ package sample.controller;
 
 import javafx.concurrent.Task;
 import javafx.fxml.FXML;
-
-import java.io.IOException;
-import java.net.URL;
-import java.util.ResourceBundle;
-
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
@@ -21,9 +16,11 @@ import javafx.stage.Stage;
 import sample.Main;
 import sample.model.Block;
 
-import static sample.Main.*;
+import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
+
 import static sample.model.Gloabal.*;
-import static sample.model.Global.*;
 import static sample.model.Validation.addBlock;
 import static sample.model.Validation.isChainValid;
 

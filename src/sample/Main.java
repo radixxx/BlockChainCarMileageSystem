@@ -13,10 +13,9 @@ import java.security.Security;
 import java.util.HashMap;
 
 import static sample.model.Gloabal.*;
-
+import static sample.model.Validation.isChainValid;
 
 public class Main extends Application {
-
 
 
     public static HashMap<String, TransactionOutput> UTXOs = new HashMap<>();
@@ -24,6 +23,7 @@ public class Main extends Application {
     public static float minimumTransaction = 0.1f;
     public static double mileageInterval1 = 110110f;
     public static double mileageInterval2 = 5500f;
+
 
 
     @Override
@@ -68,8 +68,9 @@ public class Main extends Application {
         //its important to store our first transaction in the UTXOs list.
         UTXOs.put(genesisTransaction.outputs.get(0).id, genesisTransaction.outputs.get(0));
         System.out.println("Creating and Mining Genesis block...+ ");
-       // isChainValid();
+        isChainValid();
 
     }
+
 
 }
