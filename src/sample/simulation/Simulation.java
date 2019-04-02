@@ -31,4 +31,9 @@ public class Simulation {
         return (int) speed;
     }
 
+    public double getAllTripValue() {
+        return allTripValue;
+    }
+
+
 }
