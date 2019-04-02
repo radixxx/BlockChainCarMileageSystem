@@ -11,4 +11,11 @@ public class Simulation {
     public double speed;
 
 
+    public double calculteSpeed(double allTrip) {
+        time = a + (Math.random() * b);
+        speed = time / allTrip;
+        System.out.println("Speed on the this trip is: " + speed + " km/h");
+        return speed;
+    }
+
 }
