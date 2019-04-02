@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="add class SimulationController">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/controller/SimulationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/controller/SimulationController.java" afterDir="false" />
-    </list>
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="add class SimulationController V.2" />
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -73,8 +70,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/controller/SimulationController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
+            <state relative-caret-position="266">
+              <caret line="102" column="9" lean-forward="true" selection-start-line="102" selection-start-column="9" selection-end-line="102" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -160,8 +157,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="12" />
-    <option name="y" value="74" />
+    <option name="x" value="17" />
+    <option name="y" value="73" />
     <option name="width" value="1612" />
     <option name="height" value="876" />
   </component>
@@ -363,7 +360,7 @@
       <workItem from="1553509086086" duration="612000" />
       <workItem from="1553554209253" duration="1076000" />
       <workItem from="1553638075314" duration="2188000" />
-      <workItem from="1554146857055" duration="700000" />
+      <workItem from="1554146857055" duration="1144000" />
     </task>
     <task id="LOCAL-00001" summary="create new project structure">
       <created>1553269531390</created>
@@ -638,11 +635,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554147287363</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="add class SimulationController V.2">
+      <created>1554147574990</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1554147574990</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11829000" />
+    <option name="totallyTimeSpent" value="12273000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -654,7 +658,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="12" y="74" width="1612" height="876" extended-state="0" />
+    <frame x="17" y="73" width="1612" height="876" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.28089172" />
@@ -750,7 +754,6 @@
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
-    <MESSAGE value="add new function getInputsValue" />
     <MESSAGE value="add new function calulateHash" />
     <MESSAGE value="add new class TransactionOutput" />
     <MESSAGE value="add new class TransactionInput" />
@@ -775,7 +778,8 @@
     <MESSAGE value="edit view statistics.xml add new elements &amp; btn's" />
     <MESSAGE value="add new view for simulating" />
     <MESSAGE value="add class SimulationController" />
-    <option name="LAST_COMMIT_MESSAGE" value="add class SimulationController" />
+    <MESSAGE value="add class SimulationController V.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="add class SimulationController V.2" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -934,8 +938,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/controller/SimulationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
+        <state relative-caret-position="266">
+          <caret line="102" column="9" lean-forward="true" selection-start-line="102" selection-start-column="9" selection-end-line="102" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
