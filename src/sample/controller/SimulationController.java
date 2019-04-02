@@ -19,7 +19,8 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import static sample.model.Global.simulation;
+import static sample.model.Gloabal.simulation;
+
 
 public class SimulationController implements Initializable {
 

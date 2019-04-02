@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="add class SimulationController V.2" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="add new method getAllTripValue in class Simulation">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/controller/SimulationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/controller/SimulationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/model/Gloabal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/model/Gloabal.java" afterDir="false" />
+    </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -70,10 +74,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/controller/SimulationController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="102" column="9" lean-forward="true" selection-start-line="102" selection-start-column="9" selection-end-line="102" selection-end-column="9" />
+            <state relative-caret-position="187">
+              <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/simulation/Simulation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#978#979#0" expanded="true" />
+                <element signature="e#1013#1014#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -82,29 +96,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/model/Gloabal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/controller/StatisticsController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1139">
-              <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+            <state relative-caret-position="397">
+              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/simulation/Simulation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -137,10 +133,8 @@
         <option value="$PROJECT_DIR$/src/sample/model/Transaction.java" />
         <option value="$PROJECT_DIR$/src/sample/model/TransactionOutput.java" />
         <option value="$PROJECT_DIR$/src/sample/model/TransactionInput.java" />
-        <option value="$PROJECT_DIR$/src/sample/model/Gloabal.java" />
         <option value="$PROJECT_DIR$/src/sample/model/Repository.java" />
         <option value="$PROJECT_DIR$/src/sample/view/Simulation.java" />
-        <option value="$PROJECT_DIR$/src/sample/simulation/Simulation.java" />
         <option value="$PROJECT_DIR$/src/sample/view/Statistics.java" />
         <option value="$PROJECT_DIR$/src/sample/view/StatisticsController.java" />
         <option value="$PROJECT_DIR$/src/sample/view/sample.fxml" />
@@ -151,6 +145,8 @@
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
         <option value="$PROJECT_DIR$/src/sample/view/simulation.fxml" />
         <option value="$PROJECT_DIR$/src/sample/controller/StatisticsControllerImpl.java" />
+        <option value="$PROJECT_DIR$/src/sample/simulation/Simulation.java" />
+        <option value="$PROJECT_DIR$/src/sample/model/Gloabal.java" />
         <option value="$PROJECT_DIR$/src/sample/controller/SimulationController.java" />
       </list>
     </option>
@@ -360,7 +356,7 @@
       <workItem from="1553509086086" duration="612000" />
       <workItem from="1553554209253" duration="1076000" />
       <workItem from="1553638075314" duration="2188000" />
-      <workItem from="1554146857055" duration="1144000" />
+      <workItem from="1554146857055" duration="1911000" />
     </task>
     <task id="LOCAL-00001" summary="create new project structure">
       <created>1553269531390</created>
@@ -642,11 +638,39 @@
       <option name="project" value="LOCAL" />
       <updated>1554147574990</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="add fields in class Simulation">
+      <created>1554199532743</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1554199532743</updated>
+    </task>
+    <task id="LOCAL-00042" summary="add new method calculateSpeed in class Simulation">
+      <created>1554199571945</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1554199571945</updated>
+    </task>
+    <task id="LOCAL-00043" summary="add new method calculateRandomSpeedPivot in class Simulation">
+      <created>1554199693447</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1554199693447</updated>
+    </task>
+    <task id="LOCAL-00044" summary="add new method getAllTripValue in class Simulation">
+      <created>1554199734830</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1554199734830</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12273000" />
+    <option name="totallyTimeSpent" value="13040000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -754,10 +778,6 @@
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
-    <MESSAGE value="add new function calulateHash" />
-    <MESSAGE value="add new class TransactionOutput" />
-    <MESSAGE value="add new class TransactionInput" />
-    <MESSAGE value="add new class Repository for keeping info of actual balance of block-storage" />
     <MESSAGE value="add new function generateKeyPair" />
     <MESSAGE value="add new function getBalance" />
     <MESSAGE value="add new function sendMileage" />
@@ -779,7 +799,11 @@
     <MESSAGE value="add new view for simulating" />
     <MESSAGE value="add class SimulationController" />
     <MESSAGE value="add class SimulationController V.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="add class SimulationController V.2" />
+    <MESSAGE value="add fields in class Simulation" />
+    <MESSAGE value="add new method calculateSpeed in class Simulation" />
+    <MESSAGE value="add new method calculateRandomSpeedPivot in class Simulation" />
+    <MESSAGE value="add new method getAllTripValue in class Simulation" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new method getAllTripValue in class Simulation" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -912,13 +936,6 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/model/Gloabal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/controller/StatisticsController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1139">
@@ -929,20 +946,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/model/Gloabal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/simulation/Simulation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#978#979#0" expanded="true" />
+            <element signature="e#1013#1014#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/controller/SimulationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="102" column="9" lean-forward="true" selection-start-line="102" selection-start-column="9" selection-end-line="102" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
         </state>
       </provider>
     </entry>
