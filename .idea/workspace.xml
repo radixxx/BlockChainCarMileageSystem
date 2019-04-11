@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="fix dependencies in  class Simulation &amp; Simulation controller">
-      <change afterPath="$PROJECT_DIR$/src/sample/view/StatisticsController.java" afterDir="false" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="add new elements for statistics view, button &quot;Back&quot; &amp; icon's">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/controller/SimulationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/controller/SimulationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/controller/StatisticsController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/model/Gloabal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/model/Global.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/model/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/model/Repository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/model/Validation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/model/Validation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/simulation/Simulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/simulation/Simulation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/view/statistics.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/view/statistics.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/view/StatisticsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/view/StatisticsController.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,58 +61,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/view/simulation.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" column="127" selection-start-line="20" selection-start-column="127" selection-end-line="20" selection-end-column="127" />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/controller/SimulationController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/view/statistics.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="49" lean-forward="true" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="-59">
+              <caret line="3" column="37" lean-forward="true" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
             </state>
           </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/view/StatisticsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/simulation/Simulation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/model/Global.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+            <state relative-caret-position="486">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -160,7 +115,6 @@
         <option value="$PROJECT_DIR$/src/sample/view/Simulation.java" />
         <option value="$PROJECT_DIR$/src/sample/view/sample.fxml" />
         <option value="$PROJECT_DIR$/src/sample/model/Validation.java" />
-        <option value="$PROJECT_DIR$/src/sample/controller/Controller.java" />
         <option value="$PROJECT_DIR$/src/sample/controller/StatisticsController.java" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
         <option value="$PROJECT_DIR$/src/sample/view/simulation.fxml" />
@@ -168,8 +122,9 @@
         <option value="$PROJECT_DIR$/src/sample/simulation/Simulation.java" />
         <option value="$PROJECT_DIR$/src/sample/model/Gloabal.java" />
         <option value="$PROJECT_DIR$/src/sample/controller/SimulationController.java" />
-        <option value="$PROJECT_DIR$/src/sample/view/statistics.fxml" />
         <option value="$PROJECT_DIR$/src/sample/view/Statistics.java" />
+        <option value="$PROJECT_DIR$/src/sample/view/statistics.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/controller/Controller.java" />
         <option value="$PROJECT_DIR$/src/sample/view/StatisticsController.java" />
       </list>
     </option>
@@ -177,7 +132,7 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="14" />
-    <option name="y" value="62" />
+    <option name="y" value="60" />
     <option name="width" value="1666" />
     <option name="height" value="904" />
   </component>
@@ -254,7 +209,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555005649414" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555006180007" />
     <property name="dynamic.classpath" value="false" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -381,7 +336,7 @@
       <workItem from="1553638075314" duration="2188000" />
       <workItem from="1554146857055" duration="1911000" />
       <workItem from="1554200252127" duration="307000" />
-      <workItem from="1555005371958" duration="276000" />
+      <workItem from="1555005371958" duration="681000" />
     </task>
     <task id="LOCAL-00001" summary="create new project structure">
       <created>1553269531390</created>
@@ -698,11 +653,25 @@
       <option name="project" value="LOCAL" />
       <updated>1554200304793</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="fix bag statistics view, edit visual effect">
+      <created>1555005726490</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1555005726490</updated>
+    </task>
+    <task id="LOCAL-00047" summary="add new elements for statistics view, button &quot;Back&quot; &amp; icon's">
+      <created>1555005822412</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1555005822412</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13623000" />
+    <option name="totallyTimeSpent" value="14028000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -717,7 +686,7 @@
     <frame x="14" y="62" width="1666" height="904" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.27770936" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" weight="0.27770936" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -737,7 +706,7 @@
       <window_info anchor="bottom" id="Changes" order="10" />
       <window_info anchor="bottom" id="Profiler" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" weight="0.32908162" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.32908162" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32881773" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="15" />
       <window_info anchor="bottom" id="Terminal" order="16" weight="0.32908162" />
@@ -810,8 +779,6 @@
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
-    <MESSAGE value="add new function getBalance" />
-    <MESSAGE value="add new function sendMileage" />
     <MESSAGE value="add get &amp; set" />
     <MESSAGE value="add library bcprov ver.161" />
     <MESSAGE value="add new class Global, for keeping static data" />
@@ -835,7 +802,9 @@
     <MESSAGE value="add new method calculateRandomSpeedPivot in class Simulation" />
     <MESSAGE value="add new method getAllTripValue in class Simulation" />
     <MESSAGE value="fix dependencies in  class Simulation &amp; Simulation controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix dependencies in  class Simulation &amp; Simulation controller" />
+    <MESSAGE value="fix bag statistics view, edit visual effect" />
+    <MESSAGE value="add new elements for statistics view, button &quot;Back&quot; &amp; icon's" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new elements for statistics view, button &quot;Back&quot; &amp; icon's" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -891,16 +860,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2567">
-          <caret line="172" column="92" selection-start-line="172" selection-start-column="92" selection-end-line="172" selection-end-column="92" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/view/sample.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -939,42 +898,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/controller/StatisticsControllerImpl.java" />
-    <entry file="file://$PROJECT_DIR$/src/sample/view/simulation.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="127" selection-start-line="20" selection-start-column="127" selection-end-line="20" selection-end-column="127" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/simulation/Simulation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/model/Global.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/controller/StatisticsController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-670">
@@ -985,27 +909,75 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/controller/SimulationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        <state relative-caret-position="234">
+          <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/view/simulation.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="127" selection-start-line="20" selection-start-column="127" selection-end-line="20" selection-end-column="127" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/model/Global.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/simulation/Simulation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="164" column="11" lean-forward="true" selection-start-line="164" selection-start-column="11" selection-end-line="164" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/view/StatisticsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
+        <state relative-caret-position="486">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/view/statistics.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="49" lean-forward="true" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-59">
+          <caret line="3" column="37" lean-forward="true" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
   </component>
   <component name="masterDetails">
