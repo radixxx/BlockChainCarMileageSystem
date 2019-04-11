@@ -15,7 +15,6 @@ import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 import sample.Main;
 import sample.model.Block;
-import sample.view.StatisticsController;
 
 import java.io.IOException;
 import java.net.URL;

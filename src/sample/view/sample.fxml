@@ -24,7 +24,7 @@
                         <Font size="25.0" />
                     </font>
                 </Label>
-                <Button fx:id="viewBtn" layoutX="37.0" layoutY="495.0" mnemonicParsing="false" onAction="#changeScreen3ButtonPushed" prefHeight="27.0" prefWidth="130.0" text="View statistic" />
+                <Button fx:id="viewBtn" layoutX="37.0" layoutY="495.0" mnemonicParsing="false" onAction="#changeScreenButtonPushed" prefHeight="27.0" prefWidth="130.0" text="View statistic" />
                 <ImageView fx:id="logo" fitHeight="52.0" fitWidth="75.0" layoutX="9.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                     <image>
                         <Image url="@../assets/logo.png" />
