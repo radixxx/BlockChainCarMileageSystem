@@ -3,7 +3,7 @@ package sample.model;
 import sample.Main;
 import sample.simulation.Simulation;
 
-public class Gloabal {
+public class Global {
 
     public static Main mm;
     public static Block genesis;

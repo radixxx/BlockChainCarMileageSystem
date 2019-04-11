@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import static sample.model.Gloabal.allTripValue;
+import static sample.model.Global.allTripValue;
 
 public class Repository {
     public PrivateKey privateKey;

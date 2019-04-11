@@ -12,7 +12,7 @@ import sample.model.TransactionOutput;
 import java.security.Security;
 import java.util.HashMap;
 
-import static sample.model.Gloabal.*;
+import static sample.model.Global.*;
 import static sample.model.Validation.isChainValid;
 
 public class Main extends Application {

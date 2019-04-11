@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import static sample.Main.difficulty;
-import static sample.model.Gloabal.genesisTransaction;
+import static sample.model.Global.genesisTransaction;
 
 public class Validation {
 

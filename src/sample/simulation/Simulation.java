@@ -1,6 +1,6 @@
 package sample.simulation;
 
-import static sample.model.Gloabal.allTripValue;
+import static sample.model.Global.allTripValue;
 
 public class Simulation {
     public double startPath;
