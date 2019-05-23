@@ -14,6 +14,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import sample.simulation.Simulation;
+import javafx.scene.control.TextField;
 
 import java.io.IOException;
 import java.net.URL;
@@ -99,6 +100,78 @@ public class SimulationController implements Initializable {
 
     @FXML
     private Label lbl8;
+
+    @FXML
+    private TextField ecuInput;
+
+    @FXML
+    private TextField oilInput;
+
+    @FXML
+    private TextField driveInput;
+
+    @FXML
+    private TextField generatorInput;
+
+    @FXML
+    private TextField intercolerInput;
+
+    @FXML
+    private TextField headlightsInput;
+
+    @FXML
+    private TextField transmissionInput;
+
+    @FXML
+    private TextField speedInput;
+
+    @FXML
+    private Button getEcu;
+
+    @FXML
+    private Button setecu;
+
+    @FXML
+    private Button getOil;
+
+    @FXML
+    private Button setOil;
+
+    @FXML
+    private Button getDrive;
+
+    @FXML
+    private Button setDrive;
+
+    @FXML
+    private Button getGenerator;
+
+    @FXML
+    private Button setGenerator;
+
+    @FXML
+    private Button getIntercoler;
+
+    @FXML
+    private Button setIntercoler;
+
+    @FXML
+    private Button getHeadlight;
+
+    @FXML
+    private Button setHeadlight;
+
+    @FXML
+    private Button getTransmission;
+
+    @FXML
+    private Button setTransmission;
+
+    @FXML
+    private Button getSpeed;
+
+    @FXML
+    private Button setSpeed;
 
 
     @FXML

@@ -20,16 +20,16 @@
                 <TextField layoutX="17.0" layoutY="65.0" />
                 <Text fill="WHITE" layoutX="19.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter mileage" />
             </children></AnchorPane>
-        <ImageView fitHeight="287.0" fitWidth="370.0" layoutX="550.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fitHeight="161.0" fitWidth="207.0" layoutX="628.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../assets/carImgId.png" />
             </image>
         </ImageView>
-        <Label fx:id="lblSpeed" layoutX="442.0" layoutY="233.0" prefHeight="35.0" prefWidth="575.0" />
+        <Label fx:id="lblSpeed" layoutX="219.0" layoutY="137.0" prefHeight="35.0" prefWidth="575.0" />
         <Label fx:id="lblTrip" layoutX="219.0" layoutY="43.0" prefHeight="50.0" prefWidth="200.0" />
         <Text fx:id="textTrip" layoutX="219.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All Trip" wrappingWidth="121.291015625" />
-        <Text fx:id="textMileage" layoutX="443.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Milege/h" />
-        <HBox layoutX="206.0" layoutY="275.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="125.0" prefWidth="1063.0" style="-fx-background-color: #EAE7D7;">
+        <Text fx:id="textMileage" layoutX="220.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Milege/h" />
+        <HBox layoutX="208.0" layoutY="178.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="125.0" prefWidth="1063.0" style="-fx-background-color: #EAE7D7;">
             <children>
                 <ImageView fx:id="imgX" fitHeight="110.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
                     <image>
@@ -97,8 +97,8 @@
                 </ImageView>
             </children>
         </HBox>
-        <Separator layoutX="205.0" layoutY="427.0" prefHeight="3.0" prefWidth="1070.0" />
-        <HBox fx:id="progressLbl" layoutX="208.0" layoutY="398.0" prefHeight="15.0" prefWidth="1063.0">
+        <Separator layoutX="205.0" layoutY="343.0" prefHeight="3.0" prefWidth="1070.0" />
+        <HBox fx:id="progressLbl" layoutX="200.0" layoutY="311.0" prefHeight="15.0" prefWidth="1063.0">
             <children>
                 <Label fx:id="lbl1" text="ECU">
                     <HBox.margin>
@@ -142,5 +142,66 @@
                 </Label>
             </children>
         </HBox>
+      <HBox layoutX="212.0" layoutY="350.0" prefHeight="36.0" prefWidth="1051.0">
+         <children>
+            <TextField fx:id="ecuInput" prefWidth="90.0">
+               <HBox.margin>
+                  <Insets left="26.0" right="4.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="oilInput" prefWidth="90.0">
+               <HBox.margin>
+                  <Insets left="41.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="driveInput" prefWidth="90.0">
+               <HBox.margin>
+                  <Insets left="35.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="generatorInput" prefWidth="90.0">
+               <HBox.margin>
+                  <Insets left="37.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="intercolerInput" prefWidth="90.0">
+               <HBox.margin>
+                  <Insets left="43.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="headlightsInput" prefWidth="90.0">
+               <HBox.margin>
+                  <Insets left="48.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="transmissionInput" prefWidth="90.0">
+               <HBox.margin>
+                  <Insets left="41.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="speedInput" prefWidth="90.0">
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <Button fx:id="getEcu" layoutX="239.0" layoutY="385.0" mnemonicParsing="false" text="Get" />
+      <Button fx:id="setecu" layoutX="288.0" layoutY="385.0" mnemonicParsing="false" text="Set" />
+      <Button fx:id="getOil" layoutX="375.0" layoutY="385.0" mnemonicParsing="false" text="Get" />
+      <Button fx:id="setOil" layoutX="423.0" layoutY="385.0" mnemonicParsing="false" text="Set" />
+      <Button fx:id="getDrive" layoutX="500.0" layoutY="385.0" mnemonicParsing="false" text="Get" />
+      <Button fx:id="setDrive" layoutX="548.0" layoutY="385.0" mnemonicParsing="false" text="Set" />
+      <Button fx:id="getGenerator" layoutX="626.0" layoutY="385.0" mnemonicParsing="false" text="Get" />
+      <Button fx:id="setGenerator" layoutX="675.0" layoutY="385.0" mnemonicParsing="false" text="Set" />
+      <Button fx:id="getIntercoler" layoutX="759.0" layoutY="385.0" mnemonicParsing="false" text="Get" />
+      <Button fx:id="setIntercoler" layoutX="808.0" layoutY="385.0" mnemonicParsing="false" text="Set" />
+      <Button fx:id="getHeadlight" layoutX="898.0" layoutY="385.0" mnemonicParsing="false" text="Get" />
+      <Button fx:id="setHeadlight" layoutX="946.0" layoutY="385.0" mnemonicParsing="false" text="Set" />
+      <Button fx:id="getTransmission" layoutX="1030.0" layoutY="385.0" mnemonicParsing="false" text="Get" />
+      <Button fx:id="setTransmission" layoutX="1077.0" layoutY="385.0" mnemonicParsing="false" text="Set" />
+      <Button fx:id="getSpeed" layoutX="1149.0" layoutY="385.0" mnemonicParsing="false" text="Get" />
+      <Button fx:id="setSpeed" layoutX="1197.0" layoutY="385.0" mnemonicParsing="false" text="Set" />
+      <Separator layoutX="205.0" layoutY="419.0" prefHeight="3.0" prefWidth="1070.0" />
     </children>
 </AnchorPane>
