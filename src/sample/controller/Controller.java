@@ -153,6 +153,7 @@ public class Controller implements Initializable {
             progressPercent.progressProperty().bind(worker.progressProperty());
             pB.progressProperty().unbind();
             pB.progressProperty().bind(worker.progressProperty());
+
             Thread t = new Thread(worker);
             t.setDaemon(true);
             t.start();

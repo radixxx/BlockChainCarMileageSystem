@@ -3,6 +3,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
@@ -26,8 +27,8 @@
             </image>
         </ImageView>
         <Label fx:id="lblSpeed" layoutX="219.0" layoutY="137.0" prefHeight="35.0" prefWidth="575.0" />
-        <Label fx:id="lblTrip" layoutX="219.0" layoutY="43.0" prefHeight="50.0" prefWidth="200.0" />
-        <Text fx:id="textTrip" layoutX="219.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All Trip" wrappingWidth="121.291015625" />
+        <Label fx:id="lblTrip" layoutX="218.0" layoutY="48.0" prefHeight="36.0" prefWidth="200.0" />
+        <Text fx:id="textTrip" layoutX="216.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All Trip" wrappingWidth="121.291015625" />
         <Text fx:id="textMileage" layoutX="220.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Milege/h" />
         <HBox layoutX="208.0" layoutY="178.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="125.0" prefWidth="1063.0" style="-fx-background-color: #EAE7D7;">
             <children>
@@ -203,5 +204,6 @@
       <Button fx:id="getSpeed" layoutX="1149.0" layoutY="385.0" mnemonicParsing="false" text="Get" />
       <Button fx:id="setSpeed" layoutX="1197.0" layoutY="385.0" mnemonicParsing="false" text="Set" />
       <Separator layoutX="205.0" layoutY="419.0" prefHeight="3.0" prefWidth="1070.0" />
+      <ProgressBar layoutX="227.0" layoutY="470.0" prefHeight="20.0" prefWidth="1037.0" progress="0.0" />
     </children>
 </AnchorPane>

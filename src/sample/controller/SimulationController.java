@@ -6,21 +6,18 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.Tooltip;
+import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import sample.simulation.Simulation;
-import javafx.scene.control.TextField;
 
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import static sample.model.Global.simulation;
+import static sample.model.Global.*;
 
 
 public class SimulationController implements Initializable {
@@ -173,6 +170,8 @@ public class SimulationController implements Initializable {
     @FXML
     private Button setSpeed;
 
+    @FXML
+    private ProgressBar simulateProgress;
 
     @FXML
     void initialize() {
@@ -188,6 +187,49 @@ public class SimulationController implements Initializable {
             simulation = new Simulation();
             lblTrip.setText(String.valueOf(simulation.getAllTripValue()));
             lblSpeed.setText(String.valueOf("Speed on the this trip is: " + simulation.calculateRandomSpeedPivot()) + " km/h");
+
+        });
+
+        //simulateProgress.progressProperty().unbind();
+
+
+        getEcu.setOnAction(event -> {
+            ecuInput.setText(String.valueOf(ECU.getBalance()));
+
+        });
+
+        getOil.setOnAction(event -> {
+            oilInput.setText(String.valueOf(Oil.getBalance()));
+
+        });
+
+        getDrive.setOnAction(event -> {
+            driveInput.setText(String.valueOf(Drive.getBalance()));
+
+        });
+
+        getGenerator.setOnAction(event -> {
+            generatorInput.setText(String.valueOf(Generator.getBalance()));
+
+        });
+
+        getIntercoler.setOnAction(event -> {
+            intercolerInput.setText(String.valueOf(Intercoler.getBalance()));
+
+        });
+
+        getHeadlight.setOnAction(event -> {
+            headlightsInput.setText(String.valueOf(Intercoler.getBalance()));
+
+        });
+
+        getTransmission.setOnAction(event -> {
+            transmissionInput.setText(String.valueOf(Transmission.getBalance()));
+
+        });
+
+        getSpeed.setOnAction(event -> {
+            speedInput.setText(String.valueOf(SpeedOmetr.getBalance()));
 
         });
 
