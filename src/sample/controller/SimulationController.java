@@ -1,5 +1,6 @@
 package sample.controller;
 
+import javafx.concurrent.Task;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -11,6 +12,8 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import sample.Main;
+import sample.model.Block;
 import sample.simulation.Simulation;
 
 import java.io.IOException;
@@ -18,6 +21,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import static sample.model.Global.*;
+import static sample.model.Validation.addBlock;
 
 
 public class SimulationController implements Initializable {
@@ -178,19 +182,45 @@ public class SimulationController implements Initializable {
 
     }
 
+    private static final String RED_BAR = "red-bar";
+    private static final String YELLOW_BAR = "yellow-bar";
+    private static final String ORANGE_BAR = "orange-bar";
+    private static final String GREEN_BAR = "green-bar";
+    private static final String[] barColorStyleClasses = {RED_BAR, ORANGE_BAR, YELLOW_BAR, GREEN_BAR};
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         btnSimulation.setTooltip(new Tooltip("Press to Simulate"));
 
+
+        //simulation button
         btnSimulation.setOnAction((event) -> {
             simulation = new Simulation();
             lblTrip.setText(String.valueOf(simulation.getAllTripValue()));
             lblSpeed.setText(String.valueOf("Speed on the this trip is: " + simulation.calculateRandomSpeedPivot()) + " km/h");
 
-        });
+            Task<Void> simulator = new Task<Void>() {
+                @Override
+                protected Void call() throws Exception {
 
-        //simulateProgress.progressProperty().unbind();
+
+                    for (int i = 0; i <= 5; i++) {
+                        Thread.sleep(150);
+                        updateProgress(i, 5);
+                        Thread.sleep(500);
+                    }
+                    return null;
+                }
+            };
+
+            simulateProgress.progressProperty().unbind();
+            simulateProgress.progressProperty().bind(simulator.progressProperty());
+
+            Thread simulationThread = new Thread(simulator);
+            simulationThread.setDaemon(true);
+            simulationThread.start();
+
+        });
 
 
         getEcu.setOnAction(event -> {
@@ -233,6 +263,7 @@ public class SimulationController implements Initializable {
 
         });
 
+
     }
 
     public void changeScreen4ButtonPushed(javafx.event.ActionEvent event) throws IOException {
@@ -245,6 +276,5 @@ public class SimulationController implements Initializable {
 
 
     }
-
 
 }
