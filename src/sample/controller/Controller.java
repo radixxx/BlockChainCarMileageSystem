@@ -141,9 +141,9 @@ public class Controller implements Initializable {
 
 
                     for (int i = 0; i <= 3; i++) {
-                        Thread.sleep(300);
+                        Thread.sleep(100);
                         updateProgress(i, 3);
-                        Thread.sleep(1000);
+                        Thread.sleep(400);
                     }
                     return null;
                 } //if pB is worked once stop, make condition

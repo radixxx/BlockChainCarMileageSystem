@@ -1,5 +1,7 @@
 package sample.controller;
 
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.concurrent.Task;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -215,6 +217,33 @@ public class SimulationController implements Initializable {
 
             simulateProgress.progressProperty().unbind();
             simulateProgress.progressProperty().bind(simulator.progressProperty());
+
+            simulateProgress.progressProperty().addListener(new ChangeListener<Number>() {
+                @Override public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
+                    double progress = newValue == null ? 0 : newValue.doubleValue();
+                    if (progress < 0.2) {
+                        setBarStyleClass(simulateProgress, RED_BAR);
+                    } else if (progress < 0.4) {
+                        setBarStyleClass(simulateProgress, ORANGE_BAR);
+                    } else if (progress < 0.6) {
+                        setBarStyleClass(simulateProgress, YELLOW_BAR);
+                    } else {
+                        setBarStyleClass(simulateProgress, GREEN_BAR);
+                    }
+                }
+
+                private void setBarStyleClass(ProgressBar simulateProgress, String barStyleClass) {
+                    simulateProgress.getStyleClass().removeAll(barColorStyleClasses);
+                    simulateProgress.getStyleClass().add(barStyleClass);
+                }
+            });
+//
+//            simulation.getChildren().setAll(simulateProgress, btnSimulation);
+//            simulation.getStylesheets().add(getClass().getResource("progressBar.css").toExternalForm());
+//            stage.setScene(new Scene(simulation));
+//            stage.show();
+//
+//            timeline.play();
 
             Thread simulationThread = new Thread(simulator);
             simulationThread.setDaemon(true);

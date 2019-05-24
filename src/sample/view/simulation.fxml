@@ -204,6 +204,6 @@
       <Button fx:id="getSpeed" layoutX="1149.0" layoutY="385.0" mnemonicParsing="false" text="Get" />
       <Button fx:id="setSpeed" layoutX="1197.0" layoutY="385.0" mnemonicParsing="false" text="Set" />
       <Separator layoutX="205.0" layoutY="419.0" prefHeight="3.0" prefWidth="1070.0" />
-      <ProgressBar fx:id="simulateProgress" layoutX="227.0" layoutY="470.0" prefHeight="20.0" prefWidth="1037.0" progress="0.0" />
+      <ProgressBar fx:id="simulateProgress" layoutX="227.0" layoutY="470.0" prefHeight="20.0" prefWidth="1037.0" progress="0.0" stylesheets="@../style/progressBar.css" />
     </children>
 </AnchorPane>
