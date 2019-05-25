@@ -30,7 +30,7 @@ public class Main extends Application {
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("view/sample.fxml"));
         Scene scene = new Scene(root);
-        stage.setTitle("iCar");
+        stage.setTitle("BlockChain Car System Control");
         stage.setScene(scene);
         stage.show();
 

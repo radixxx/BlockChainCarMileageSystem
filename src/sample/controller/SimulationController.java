@@ -206,27 +206,61 @@ public class SimulationController implements Initializable {
                 protected Void call() throws Exception {
 
 
-                    for (int i = 0; i <= 5; i++) {
-                        Thread.sleep(150);
-                        updateProgress(i, 5);
-                        Thread.sleep(500);
+                    for (int i = 0; i <= 8; i++) {
+                        Thread.sleep(100);
+                        updateProgress(i, 8);
+                        Thread.sleep(300);
                     }
                     return null;
                 }
             };
 
+
             simulateProgress.progressProperty().unbind();
             simulateProgress.progressProperty().bind(simulator.progressProperty());
 
             simulateProgress.progressProperty().addListener(new ChangeListener<Number>() {
-                @Override public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
+                @Override
+                public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue)
+//                {
+//                    double progress = newValue == null ? 0 : newValue.doubleValue();
+//                    if (progress < 0.2) {
+//                        setBarStyleClass(simulateProgress, RED_BAR);
+//                    } else if (progress < 0.4) {
+//                        setBarStyleClass(simulateProgress, ORANGE_BAR);
+//                    } else if (progress < 0.6) {
+//                        setBarStyleClass(simulateProgress, YELLOW_BAR);
+//                    } else {
+//                        setBarStyleClass(simulateProgress, GREEN_BAR);
+//                    }
+//                }
+
+//                {
+//                    double progress = newValue == null ? 0 : newValue.doubleValue();
+//                    if (progress == 1 && Drive.getBalance() == 15730) { //||
+//                        setBarStyleClass(simulateProgress, GREEN_BAR);
+//                    } else if (progress == 1 && Drive.getBalance() < 15730 ) { // !!
+//                        setBarStyleClass(simulateProgress, RED_BAR);
+//                    } else if (progress < 0.6) {
+//                        setBarStyleClass(simulateProgress, YELLOW_BAR);
+//                    } else {
+//                        setBarStyleClass(simulateProgress, GREEN_BAR);
+//                    }
+//                }
+
+
+
+                {
                     double progress = newValue == null ? 0 : newValue.doubleValue();
-                    if (progress < 0.2) {
-                        setBarStyleClass(simulateProgress, RED_BAR);
-                    } else if (progress < 0.4) {
-                        setBarStyleClass(simulateProgress, ORANGE_BAR);
+                    if (progress == 1 && Drive.getBalance() == 15730) { //||
+                        setBarStyleClass(simulateProgress, GREEN_BAR);
+
                     } else if (progress < 0.6) {
                         setBarStyleClass(simulateProgress, YELLOW_BAR);
+
+                    } else if (progress == 1 || Drive.getBalance() < 15730) { // !!
+                        setBarStyleClass(simulateProgress, RED_BAR);
+
                     } else {
                         setBarStyleClass(simulateProgress, GREEN_BAR);
                     }
@@ -237,21 +271,26 @@ public class SimulationController implements Initializable {
                     simulateProgress.getStyleClass().add(barStyleClass);
                 }
             });
-//
-//            simulation.getChildren().setAll(simulateProgress, btnSimulation);
-//            simulation.getStylesheets().add(getClass().getResource("progressBar.css").toExternalForm());
-//            stage.setScene(new Scene(simulation));
-//            stage.show();
-//
-//            timeline.play();
 
             Thread simulationThread = new Thread(simulator);
             simulationThread.setDaemon(true);
             simulationThread.start();
 
+
         });
 
+//
+        setDrive.setOnAction((event1) -> {
 
+            block1.addTransaction(ECU.sendMileage(Drive.publicKey,-15730));
+//            driveInput.setText(String.valueOf(
+//                    );
+            System.out.println(Drive.getBalance());
+            System.out.println(driveInput.getText());
+
+        });
+
+//
         getEcu.setOnAction(event -> {
             ecuInput.setText(String.valueOf(ECU.getBalance()));
 
@@ -259,37 +298,37 @@ public class SimulationController implements Initializable {
 
         getOil.setOnAction(event -> {
             oilInput.setText(String.valueOf(Oil.getBalance()));
-
+            System.out.println("Oil: " + oilInput.getText());
         });
 
         getDrive.setOnAction(event -> {
             driveInput.setText(String.valueOf(Drive.getBalance()));
-
+            System.out.println(Drive.getBalance());
         });
 
         getGenerator.setOnAction(event -> {
             generatorInput.setText(String.valueOf(Generator.getBalance()));
-
+            System.out.println("Generator: " + generatorInput.getText());
         });
 
         getIntercoler.setOnAction(event -> {
             intercolerInput.setText(String.valueOf(Intercoler.getBalance()));
-
+            System.out.println("Intercoler: " + intercolerInput.getText());
         });
 
         getHeadlight.setOnAction(event -> {
             headlightsInput.setText(String.valueOf(Intercoler.getBalance()));
-
+            System.out.println("Headlight: " + headlightsInput.getText());
         });
 
         getTransmission.setOnAction(event -> {
             transmissionInput.setText(String.valueOf(Transmission.getBalance()));
-
+            System.out.println("Transmission: " + transmissionInput.getText());
         });
 
         getSpeed.setOnAction(event -> {
             speedInput.setText(String.valueOf(SpeedOmetr.getBalance()));
-
+            System.out.println("Speedometer: " + speedInput.getText());
         });
 
 
