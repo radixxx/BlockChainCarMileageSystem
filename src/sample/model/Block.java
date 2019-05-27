@@ -48,9 +48,10 @@ public class Block {
     //Add transactions to this block
     public boolean addTransaction(Transaction transaction) {
         //process transaction and check if valid, unless block is genesis block then ignore.
-        if (transaction == null) return false;
+        if (transaction == null)
+            return false;
         if ((!"0".equals(previousHash))) {
-            if ((transaction.processTransaction() != true)) {
+            if ((!transaction.processTransaction())) {
                 System.out.println("Transaction failed to process. Discarded.");
                 return false;
             }

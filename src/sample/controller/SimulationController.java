@@ -18,7 +18,10 @@ import sample.Main;
 import sample.model.Block;
 import sample.simulation.Simulation;
 
+import java.io.*;
+import java.io.Console;
 import java.io.IOException;
+import java.io.PrintStream;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -40,6 +43,12 @@ public class SimulationController implements Initializable {
 
     @FXML
     private Button btnSimulation;
+
+    @FXML
+    private TextField mileageField;
+
+    @FXML
+    private Button okBtn;
 
     @FXML
     private Label lblSpeed;
@@ -209,7 +218,7 @@ public class SimulationController implements Initializable {
                     for (int i = 0; i <= 8; i++) {
                         Thread.sleep(100);
                         updateProgress(i, 8);
-                        Thread.sleep(300);
+                        Thread.sleep(200);
                     }
                     return null;
                 }
@@ -221,36 +230,7 @@ public class SimulationController implements Initializable {
 
             simulateProgress.progressProperty().addListener(new ChangeListener<Number>() {
                 @Override
-                public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue)
-//                {
-//                    double progress = newValue == null ? 0 : newValue.doubleValue();
-//                    if (progress < 0.2) {
-//                        setBarStyleClass(simulateProgress, RED_BAR);
-//                    } else if (progress < 0.4) {
-//                        setBarStyleClass(simulateProgress, ORANGE_BAR);
-//                    } else if (progress < 0.6) {
-//                        setBarStyleClass(simulateProgress, YELLOW_BAR);
-//                    } else {
-//                        setBarStyleClass(simulateProgress, GREEN_BAR);
-//                    }
-//                }
-
-//                {
-//                    double progress = newValue == null ? 0 : newValue.doubleValue();
-//                    if (progress == 1 && Drive.getBalance() == 15730) { //||
-//                        setBarStyleClass(simulateProgress, GREEN_BAR);
-//                    } else if (progress == 1 && Drive.getBalance() < 15730 ) { // !!
-//                        setBarStyleClass(simulateProgress, RED_BAR);
-//                    } else if (progress < 0.6) {
-//                        setBarStyleClass(simulateProgress, YELLOW_BAR);
-//                    } else {
-//                        setBarStyleClass(simulateProgress, GREEN_BAR);
-//                    }
-//                }
-
-
-
-                {
+                public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
                     double progress = newValue == null ? 0 : newValue.doubleValue();
                     if (progress == 1 && Drive.getBalance() == 15730) { //||
                         setBarStyleClass(simulateProgress, GREEN_BAR);
@@ -279,17 +259,33 @@ public class SimulationController implements Initializable {
 
         });
 
-//
         setDrive.setOnAction((event1) -> {
 
-            block1.addTransaction(ECU.sendMileage(Drive.publicKey,-15730));
-//            driveInput.setText(String.valueOf(
-//                    );
-            System.out.println(Drive.getBalance());
+            block1.addTransaction(ECU.sendMileage(Drive.publicKey, -15730));
+//            driveInput.setText(String.valueOf();
+            System.out.println("Transaction failed to process. Discarded.");
+            System.out.println("Error #2. Drive is blocked");
+            //System.out.println(Drive.getBalance());
             System.out.println(driveInput.getText());
 
         });
 
+        setTransmission.setOnAction((event1) -> {
+
+            block1.addTransaction(ECU.sendMileage(Transmission.publicKey, -15730));
+//            driveInput.setText(String.valueOf();
+            System.out.println("Transaction failed to process. Discarded.");
+            System.out.println("Error #7. Transmission is blocked");
+            //System.out.println(Drive.getBalance());
+            System.out.println(transmissionInput.getText());
+
+        });
+
+        okBtn.setOnAction((event2) -> {
+
+            System.out.println(lblSpeed.getText());
+            System.out.println(mileageField.getText());
+        });
 //
         getEcu.setOnAction(event -> {
             ecuInput.setText(String.valueOf(ECU.getBalance()));
@@ -303,7 +299,7 @@ public class SimulationController implements Initializable {
 
         getDrive.setOnAction(event -> {
             driveInput.setText(String.valueOf(Drive.getBalance()));
-            System.out.println(Drive.getBalance());
+            System.out.println("Drive: " + Drive.getBalance());
         });
 
         getGenerator.setOnAction(event -> {
@@ -330,9 +326,9 @@ public class SimulationController implements Initializable {
             speedInput.setText(String.valueOf(SpeedOmetr.getBalance()));
             System.out.println("Speedometer: " + speedInput.getText());
         });
-
-
+        
     }
+
 
     public void changeScreen4ButtonPushed(javafx.event.ActionEvent event) throws IOException {
         Parent tableViewParent = FXMLLoader.load(getClass().getResource("/sample/view/sample.fxml"));
@@ -341,7 +337,6 @@ public class SimulationController implements Initializable {
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
         window.setScene(tableViewScene);
         window.show();
-
 
     }
 

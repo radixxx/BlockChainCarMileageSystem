@@ -18,8 +18,9 @@
             <children>
                 <Button fx:id="btnBackSample" layoutX="47.0" layoutY="538.0" mnemonicParsing="false" onAction="#changeScreen4ButtonPushed" prefHeight="30.0" prefWidth="100.0" text="Back to Menu" />
                 <Button fx:id="btnSimulation" layoutX="47.0" layoutY="492.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="Simulation" />
-                <TextField layoutX="17.0" layoutY="65.0" />
+                <TextField fx:id="mileageField" layoutX="10.0" layoutY="65.0" prefHeight="20.0" prefWidth="125.0" />
                 <Text fill="WHITE" layoutX="19.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter mileage" />
+            <Button fx:id="okBtn" layoutX="149.0" layoutY="66.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="38.0" text="OK" />
             </children></AnchorPane>
         <ImageView fitHeight="161.0" fitWidth="207.0" layoutX="628.0" pickOnBounds="true" preserveRatio="true">
             <image>
@@ -204,6 +205,6 @@
       <Button fx:id="getSpeed" layoutX="1149.0" layoutY="385.0" mnemonicParsing="false" text="Get" />
       <Button fx:id="setSpeed" layoutX="1197.0" layoutY="385.0" mnemonicParsing="false" text="Set" />
       <Separator layoutX="205.0" layoutY="419.0" prefHeight="3.0" prefWidth="1070.0" />
-      <ProgressBar fx:id="simulateProgress" layoutX="227.0" layoutY="470.0" prefHeight="20.0" prefWidth="1037.0" progress="0.0" stylesheets="@../style/progressBar.css" />
+      <ProgressBar fx:id="simulateProgress" layoutX="227.0" layoutY="494.0" prefHeight="20.0" prefWidth="1037.0" progress="0.0" stylesheets="@../style/progressBar.css" />
     </children>
 </AnchorPane>
