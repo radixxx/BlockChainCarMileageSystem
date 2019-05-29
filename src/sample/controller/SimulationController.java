@@ -1,5 +1,6 @@
 package sample.controller;
 
+import javafx.animation.Animation;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.concurrent.Task;
@@ -14,6 +15,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 import sample.Main;
 import sample.model.Block;
 import sample.simulation.Simulation;
@@ -49,6 +51,9 @@ public class SimulationController implements Initializable {
 
     @FXML
     private Button okBtn;
+
+    @FXML
+    private Button btnInitializing;
 
     @FXML
     private Label lblSpeed;
@@ -189,6 +194,78 @@ public class SimulationController implements Initializable {
     private ProgressBar simulateProgress;
 
     @FXML
+    private ImageView green1Img;
+
+    @FXML
+    private ImageView red1Img;
+
+    @FXML
+    private ImageView yellow1Img;
+
+    @FXML
+    private ImageView green2Img;
+
+    @FXML
+    private ImageView red2Img;
+
+    @FXML
+    private ImageView yellow2Img;
+
+    @FXML
+    private ImageView green3Img;
+
+    @FXML
+    private ImageView red3Img;
+
+    @FXML
+    private ImageView yellow3Img;
+
+    @FXML
+    private ImageView green4Img;
+
+    @FXML
+    private ImageView red4Img;
+
+    @FXML
+    private ImageView yellow4Img;
+
+    @FXML
+    private ImageView green5Img;
+
+    @FXML
+    private ImageView red5Img;
+
+    @FXML
+    private ImageView yellow5Img;
+
+    @FXML
+    private ImageView green6Img;
+
+    @FXML
+    private ImageView red6Img;
+
+    @FXML
+    private ImageView yellow6Img;
+
+    @FXML
+    private ImageView green7Img;
+
+    @FXML
+    private ImageView red7Img;
+
+    @FXML
+    private ImageView yellow7Img;
+
+    @FXML
+    private ImageView green8Img;
+
+    @FXML
+    private ImageView red8Img;
+
+    @FXML
+    private ImageView yellow8Img;
+
+    @FXML
     void initialize() {
 
     }
@@ -199,9 +276,52 @@ public class SimulationController implements Initializable {
     private static final String GREEN_BAR = "green-bar";
     private static final String[] barColorStyleClasses = {RED_BAR, ORANGE_BAR, YELLOW_BAR, GREEN_BAR};
 
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         btnSimulation.setTooltip(new Tooltip("Press to Simulate"));
+
+        green1Img.setOpacity(0);
+        red1Img.setOpacity(0);
+        yellow1Img.setOpacity(0);
+
+        green2Img.setOpacity(0);
+        red2Img.setOpacity(0);
+        yellow2Img.setOpacity(0);
+
+        green3Img.setOpacity(0);
+        red3Img.setOpacity(0);
+        yellow3Img.setOpacity(0);
+
+        green4Img.setOpacity(0);
+        red4Img.setOpacity(0);
+        yellow4Img.setOpacity(0);
+
+        green5Img.setOpacity(0);
+        red5Img.setOpacity(0);
+        yellow5Img.setOpacity(0);
+
+        green6Img.setOpacity(0);
+        red6Img.setOpacity(0);
+        yellow6Img.setOpacity(0);
+
+        green7Img.setOpacity(0);
+        red7Img.setOpacity(0);
+        yellow7Img.setOpacity(0);
+
+        green8Img.setOpacity(0);
+        red8Img.setOpacity(0);
+        yellow8Img.setOpacity(0);
+
+
+
+
+        btnInitializing.setOnAction((event) ->{
+            if (Drive.getBalance() == 15730 && Transmission.getBalance() == 15730){
+                System.out.println("Initialization status: OK");
+            }else
+                System.out.println("Initialization status: Error");
+        });
 
 
         //simulation button
@@ -234,12 +354,35 @@ public class SimulationController implements Initializable {
                     double progress = newValue == null ? 0 : newValue.doubleValue();
                     if (progress == 1 && Drive.getBalance() == 15730) { //||
                         setBarStyleClass(simulateProgress, GREEN_BAR);
+                        green1Img.setOpacity(1);
+                        green2Img.setOpacity(1);
+                        green3Img.setOpacity(1);
+                        green4Img.setOpacity(1);
+                        green5Img.setOpacity(1);
+                        green6Img.setOpacity(1);
+                        green7Img.setOpacity(1);
+                        green8Img.setOpacity(1);
 
                     } else if (progress < 0.6) {
                         setBarStyleClass(simulateProgress, YELLOW_BAR);
 
+                        green1Img.setOpacity(0);
+                        green2Img.setOpacity(0);
+                        green3Img.setOpacity(0);
+                        green4Img.setOpacity(0);
+                        green5Img.setOpacity(0);
+                        green6Img.setOpacity(0);
+                        green7Img.setOpacity(0);
+                        green8Img.setOpacity(0);
+
                     } else if (progress == 1 || Drive.getBalance() < 15730) { // !!
                         setBarStyleClass(simulateProgress, RED_BAR);
+                        red3Img.setOpacity(1);
+                        red7Img.setOpacity(1);
+                        red1Img.setOpacity(1);
+
+                        yellow3Img.setOpacity(1);
+                        yellow7Img.setOpacity(1);
 
                     } else {
                         setBarStyleClass(simulateProgress, GREEN_BAR);
@@ -262,13 +405,16 @@ public class SimulationController implements Initializable {
         setDrive.setOnAction((event1) -> {
 
             block1.addTransaction(ECU.sendMileage(Drive.publicKey, -15730));
-//            driveInput.setText(String.valueOf();
+            if (Drive.getBalance() <= 15730 )
+                red3Img.setOpacity(1);
+
             System.out.println("Transaction failed to process. Discarded.");
             System.out.println("Error #2. Drive is blocked");
             //System.out.println(Drive.getBalance());
             System.out.println(driveInput.getText());
 
         });
+
 
         setTransmission.setOnAction((event1) -> {
 
@@ -284,7 +430,7 @@ public class SimulationController implements Initializable {
         okBtn.setOnAction((event2) -> {
 
             System.out.println(lblSpeed.getText());
-            System.out.println(mileageField.getText());
+            System.out.println(mileageField.getText() + "  mileage");
         });
 //
         getEcu.setOnAction(event -> {
@@ -326,7 +472,7 @@ public class SimulationController implements Initializable {
             speedInput.setText(String.valueOf(SpeedOmetr.getBalance()));
             System.out.println("Speedometer: " + speedInput.getText());
         });
-        
+
     }
 
 

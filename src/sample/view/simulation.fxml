@@ -17,10 +17,11 @@
         <AnchorPane prefHeight="580.0" prefWidth="200.0" style="-fx-background-color: #1E2223;">
             <children>
                 <Button fx:id="btnBackSample" layoutX="47.0" layoutY="538.0" mnemonicParsing="false" onAction="#changeScreen4ButtonPushed" prefHeight="30.0" prefWidth="100.0" text="Back to Menu" />
-                <Button fx:id="btnSimulation" layoutX="47.0" layoutY="492.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="Simulation" />
+                <Button fx:id="btnSimulation" layoutX="47.0" layoutY="452.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="Simulation" />
                 <TextField fx:id="mileageField" layoutX="10.0" layoutY="65.0" prefHeight="20.0" prefWidth="125.0" />
                 <Text fill="WHITE" layoutX="19.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter mileage" />
-            <Button fx:id="okBtn" layoutX="149.0" layoutY="66.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="38.0" text="OK" />
+            <Button fx:id="okBtn" layoutX="149.0" layoutY="66.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="38.0" text="OK" />
+            <Button fx:id="btnInitializing" layoutX="47.0" layoutY="496.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="Initializing" />
             </children></AnchorPane>
         <ImageView fitHeight="161.0" fitWidth="207.0" layoutX="628.0" pickOnBounds="true" preserveRatio="true">
             <image>
@@ -204,7 +205,127 @@
       <Button fx:id="setTransmission" layoutX="1077.0" layoutY="385.0" mnemonicParsing="false" text="Set" />
       <Button fx:id="getSpeed" layoutX="1149.0" layoutY="385.0" mnemonicParsing="false" text="Get" />
       <Button fx:id="setSpeed" layoutX="1197.0" layoutY="385.0" mnemonicParsing="false" text="Set" />
-      <Separator layoutX="205.0" layoutY="419.0" prefHeight="3.0" prefWidth="1070.0" />
-      <ProgressBar fx:id="simulateProgress" layoutX="227.0" layoutY="494.0" prefHeight="20.0" prefWidth="1037.0" progress="0.0" stylesheets="@../style/progressBar.css" />
+      <Separator layoutX="205.0" layoutY="437.0" prefHeight="3.0" prefWidth="1070.0" />
+      <ProgressBar fx:id="simulateProgress" layoutX="227.0" layoutY="500.0" prefHeight="20.0" prefWidth="1037.0" progress="0.0" stylesheets="@../style/progressBar.css" />
+      <ImageView fx:id="green1Img" fitHeight="15.0" fitWidth="15.0" layoutX="240.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/green.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="red1Img" fitHeight="15.0" fitWidth="15.0" layoutX="311.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/red.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="yellow1Img" fitHeight="15.0" fitWidth="15.0" layoutX="275.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/yellow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="green2Img" fitHeight="15.0" fitWidth="15.0" layoutX="376.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/green.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="red2Img" fitHeight="15.0" fitWidth="15.0" layoutX="446.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/red.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="yellow2Img" fitHeight="15.0" fitWidth="15.0" layoutX="411.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/yellow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="green3Img" fitHeight="15.0" fitWidth="15.0" layoutX="501.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/green.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="red3Img" fitHeight="15.0" fitWidth="15.0" layoutX="571.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/red.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="yellow3Img" fitHeight="15.0" fitWidth="15.0" layoutX="536.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/yellow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="green4Img" fitHeight="15.0" fitWidth="15.0" layoutX="627.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/green.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="red4Img" fitHeight="15.0" fitWidth="15.0" layoutX="698.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/red.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="yellow4Img" fitHeight="15.0" fitWidth="15.0" layoutX="663.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/yellow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="green5Img" fitHeight="15.0" fitWidth="15.0" layoutX="760.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/green.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="red5Img" fitHeight="15.0" fitWidth="15.0" layoutX="831.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/red.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="yellow5Img" fitHeight="15.0" fitWidth="15.0" layoutX="796.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/yellow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="green6Img" fitHeight="15.0" fitWidth="15.0" layoutX="899.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/green.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="red6Img" fitHeight="15.0" fitWidth="15.0" layoutX="969.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/red.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="yellow6Img" fitHeight="15.0" fitWidth="15.0" layoutX="935.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/yellow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="green7Img" fitHeight="15.0" fitWidth="15.0" layoutX="1031.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/green.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="red7Img" fitHeight="15.0" fitWidth="15.0" layoutX="1100.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/red.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="yellow7Img" fitHeight="15.0" fitWidth="15.0" layoutX="1066.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/yellow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="green8Img" fitHeight="15.0" fitWidth="15.0" layoutX="1150.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/green.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="red8Img" fitHeight="15.0" fitWidth="15.0" layoutX="1220.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/red.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="yellow8Img" fitHeight="15.0" fitWidth="15.0" layoutX="1185.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/yellow.png" />
+         </image>
+      </ImageView>
     </children>
 </AnchorPane>
